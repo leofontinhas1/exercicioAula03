@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+	<!-- Última versão CSS compilada e minificada -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Tema opcional -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="CSS/indexcss.css">
+	<!--Para chamar uma biblioteca ou a referência através de uma pasta baixada no computador-->
+	<!--<link href="<?php echo $this->base_url('assets/js/bootstrap.js')?>"/>-->
+	<title>Formulário Panda</title>
+</head>
+<body>
+	<div class="col-lg-12">
+	<div class="container-fluid" >
+  		<form class="formatar">
+  			<div class="form-inline">
+				<div class="form-group">
+					<label for="identificadorLabel">Identificador</label>
+				    <input type="text" class="form-control" id="identificador">
+				    <label for="cpfLabel">CNPJ/CPF</label>
+				    <input type="text" class="form-control" id="cpf">
+				</div>
+				<button type="submit" class="btn btn-default">Buscar</button>
+				<div class="form-group">
+					<label for="rgLabel">I.E./R.G./Insc. Produtor</label>
+				    <input type="text" class="form-control" id="rg">
+				    <label for="razaosocialLabel">Razão Social/Nome</label>
+				    <input type="text" class="form-control" id="razaosocial">
+				</div>
+			</div>
+		</form>
+  	</div>
+  	<div>
+ 	 <!-- Nav tabs -->
+	  <ul class="nav nav-tabs" role="tablist">
+	    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Dados Gerais</a></li>
+	    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Dados Cobrança</a></li>
+	  </ul>
+
+	  <!-- Tab panes -->
+	  <div class="tab-content">
+	    <div role="tabpanel" class="tab-pane active aba margem" id="home">
+	    	<form>
+	    		<div class="form-inline">
+					<div class="form-group margem">
+						<label for="nomefantasiaLabel">Fantasia / Apelido</label>
+					    <input type="text" class="form-control" id="nomefantasia">
+					    <label for="inscricaomunicipalLabel">Inscrição Municipal</label>
+					    <input type="text" class="form-control" id="inscricaomunicipal">
+					    <label for="inscricaosuframaLabel">Inscrição Suframa</label>
+					    <input type="text" class="form-control" id="inscricaosuframa">
+					</div>
+					<div class="form-group margem">
+						<label for="cepLabel">C.E.P.:</label>
+					    <input type="text" class="form-control" id="cep">
+					    <button type="submit" class="btn btn-default">Buscar</button>
+					    <label for="identificadorInscricaoestadualLabel">Identificador de Inscrição Estadual</label>
+					    <input type="text" class="form-control" id="identInscricaoestadual">
+					    <label for="documentoestrangeiroLabel">Documento Estrangeiro (N. do passaporte / Doc. oficial)</label>
+					    <input type="text" class="form-control" id="documentoestrangeiro">
+					</div>
+					<div class="form-group margem">
+						<label for="enderecoLabel">Endereço</label>
+					    <input type="text" class="form-control" id="endereco">
+					    <label for="numeroLabel">numero</label>
+					    <input type="text" class="form-control" id="numeroendereco">
+					    <label for="complementoLabel">Complemento</label>
+					    <input type="text" class="form-control" id="complementoendereco">
+					</div>
+					<div class="form-group margem">
+						<label for="bairroLabel">Bairro</label>
+					    <input type="text" class="form-control" id="bairro">
+					    <label for="cidadeLabel">Cidade</label>
+					    <select class="form-control">
+						  <option>1</option>
+						  <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>5</option>
+						</select>
+					</div>
+					<div class="form-group margem">
+						<label for="telefone1Label">Telefone 1</label>
+					    <input type="text" class="form-control" id="telefone1">
+					    <label for="telefone2Label">Telefone 2</label>
+					    <input type="text" class="form-control" id="telefone2">
+					    <label for="siteLabel">Site (wwww)</label>
+					    <input type="text" class="form-control" id="site">
+					</div>
+					<div class="margem">
+ 						<label>
+					     	<input type="checkbox"> Colaborador - Vendedor
+					     </label>
+					</div>
+					<div class="margem">
+						<label>Observação</label>
+					</div>
+					<div>
+						<textarea class="form-control" rows="3"></textarea>
+					</div>
+				</div>
+	    	</form>
+	    </div>
+
+	    <div role="tabpanel" class="tab-pane aba" id="profile">
+	    	<div class="form-group col-lg-12">
+				<label for="cepcobrancaLabel">C.E.P.:</label>
+			    <input type="text" class="form-control" id="cepcobranca">
+			</div>
+			<div class="form-group">
+				<label for="enderecocobrancaLabel">Endereço</label>
+			    <input type="text" class="form-control" id="enderecocobranca">
+			    <label for="numerocobrancaLabel">numero</label>
+			    <input type="text" class="form-control" id="numeroenderecocobranca">
+			    <label for="complementocobrancaLabel">Complemento</label>
+			    <input type="text" class="form-control" id="complementoenderecocobranca">
+			</div>
+			<div class="form-group">
+				<label for="bairrocobrancaLabel">Bairro</label>
+			    <input type="text" class="form-control" id="bairrocobranca">
+			    <label for="cidadecobrancaLabel">Cidade</label>
+			    <select class="form-control">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="limitecreditoLabel">Limite de Crédito Autorizado</label>
+			    <input type="text" class="form-control" id="limitecredito">
+			</div>
+	    </div>
+	  </div>
+	    <div class="container-fluid aba">
+	    	<label>
+				<input type="checkbox"> Cliente
+			</label>
+			<label>
+			   	<input type="checkbox"> Fornecedor
+			</label>
+			<label>
+			   	<input type="checkbox"> Transportadora
+			</label>
+			<label>
+			   	<input type="checkbox"> Colaborador
+			</label>
+			<label>
+			   	<input type="checkbox"> Operadora de Cartão
+			</label>
+			<label>
+			   	<input type="checkbox"> Cheque
+			</label>
+	    </div>
+	</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Última versão JavaScript compilada e minificada -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
